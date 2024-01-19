@@ -16,14 +16,17 @@
 function calculateTotalSpentByCategory(transactions) {
   const newarr = transactions.reduce((acc=[],curr) => {
     // if(acc.length)
-    for(let item of acc){
-      if(item.category === curr.category){
-        return [...acc,{...item, totalSpent  : item.totalSpent + curr.price}]
+    for(let item=0;item<acc.length;item++){
+      if(acc[item].category === curr.category){
+        // console.log(acc[item],item)
+        acc[item] = {...acc[item], "totalSpent"  : acc[item].totalSpent + curr.price}
+        // return [...acc,{...acc[item], "totalSpent"  : acc[item].totalSpent + curr.price}]
+        return acc
       }
     }
     return [...acc,{category : curr.category, totalSpent  :curr.price}]
   },[])
-  console.log(newarr)
+  // console.log(newarr)
   return newarr;
 }
 calculateTotalSpentByCategory([
