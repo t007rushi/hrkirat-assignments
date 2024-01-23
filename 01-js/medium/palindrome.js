@@ -4,8 +4,14 @@
 */
 
 function isPalindrome(str) {
-  console.log(str.toLowerCase() , str.toLowerCase().split("").reverse().join(""))
-  if(str.toLowerCase() === str.toLowerCase().split("").reverse().join("")){
+  // console.log(str.toLowerCase() , str.toLowerCase().split("").reverse().join(""))
+  if(str.split(" ").length > 1){
+    console.log(str.toLowerCase().split(" ").reverse().join(""))
+if(str.toLowerCase().split(" ").join("") === str.toLowerCase().split(" ").join("")){
+  return true
+}
+  }
+  else if(str.toLowerCase() === str.toLowerCase().split("").reverse().join("")){
     return true;
   }
   return false

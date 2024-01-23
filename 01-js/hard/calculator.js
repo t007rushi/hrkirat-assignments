@@ -16,6 +16,19 @@
   Once you've implemented the logic, test your code by running
 */
 
-class Calculator {}
+class Calculator {
+
+  constructor(initalValue){
+    this.result = initalValue;
+  }
+
+  add(value){
+    this.result+=value;
+  }
+
+  subtract(value){
+    this.result-=value;
+  }
+}
 
 module.exports = Calculator;
