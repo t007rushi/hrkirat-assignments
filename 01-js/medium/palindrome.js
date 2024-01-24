@@ -6,7 +6,7 @@
 function isPalindrome(str) {
   // console.log(str.toLowerCase() , str.toLowerCase().split("").reverse().join(""))
   if(str.split(" ").length > 1){
-    console.log(str.toLowerCase().split(" ").reverse().join(""))
+    // console.log(str.toLowerCase().split(" ").reverse().join(""))
 if(str.toLowerCase().split(" ").join("") === str.toLowerCase().split(" ").join("")){
   return true
 }
@@ -16,5 +16,5 @@ if(str.toLowerCase().split(" ").join("") === str.toLowerCase().split(" ").join("
   }
   return false
 }
-console.log(isPalindrome('race car'))
+// console.log(isPalindrome('race car'))
 module.exports = isPalindrome;

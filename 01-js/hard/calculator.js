@@ -29,6 +29,20 @@ class Calculator {
   subtract(value){
     this.result-=value;
   }
+
+  multiply(value){
+    this.result*=value;
+  }
+
+  divide(value){
+    this.result/=value;
+  }
+  multiply(){
+    this.result = 0;
+  }
+  getResult(){
+    return this.result;
+  }
 }
 
 module.exports = Calculator;
