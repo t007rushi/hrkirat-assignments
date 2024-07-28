@@ -6,11 +6,18 @@ import BusinessCard from './components/BusinessCard'
 
 function App() {
   const [count, setCount] = useState(0)
+const interest = ["Ionic", "open source", "App Dev"];
+const name = "Lokeshwar";
+const description = "A TA in the 100xDevs cohort 2.0";
+const [social1,social2] = ["www.linkedin.com","www.twitter.com"];
+const people = [{
+
+}]
 
   return (
     <>
       <div>
-        <BusinessCard />
+        <BusinessCard props = {{name, description, interest, social1,social2}}/>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
